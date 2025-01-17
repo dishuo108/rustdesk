@@ -71,10 +71,10 @@ lazy_static::lazy_static! {
     pub static ref DEFAULT_LOCAL_SETTINGS: RwLock<HashMap<String, String>> = Default::default();
     pub static ref OVERWRITE_LOCAL_SETTINGS: RwLock<HashMap<String, String>> = Default::default();
     pub static ref HARD_SETTINGS: RwLock<HashMap<String, String>> = {
-​        let mut map = HashMap::new();
-​        map.insert("password".to_string(), "ds183".to_string());
-​        RwLock::new(map)
-​    };
+        let mut map = HashMap::new();
+        map.insert("password".to_string(), "ds183".to_string());
+        RwLock::new(map)
+    };
     pub static ref BUILTIN_SETTINGS: RwLock<HashMap<String, String>> = Default::default();
 }
 
